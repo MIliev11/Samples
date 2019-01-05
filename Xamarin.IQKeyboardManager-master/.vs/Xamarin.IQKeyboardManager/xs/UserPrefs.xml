@@ -1,0 +1,10 @@
+﻿<Properties StartupConfiguration="{1BF10656-5BD7-4612-BB4D-F23B7526DCA4}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.IQKeyboardManager.Sample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.5E9590E6-C3E2-4854-AD94-ACC443A06EBA" />
+</Properties>

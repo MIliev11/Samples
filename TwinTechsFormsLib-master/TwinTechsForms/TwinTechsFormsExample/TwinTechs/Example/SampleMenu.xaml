@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="TwinTechs.Example.SampleMenu"
+	Title="TwinTechsForms Examples">
+
+	<ContentPage.Content>
+
+		<TableView
+			Intent="Form">
+
+			<TableSection
+				Title="Page in Page">
+
+				<TextCell
+					Detail="This section has examples of the PageContainer control which you can use to create custom UIs, embedding a page inside another page" />
+
+				<TextCell
+					Text="Simple example"
+					Tapped="OnPageInPageSimple" />
+
+				<TextCell
+					Text="Embedded navigation page"
+					Detail="Demonstrating a bug with embedded a page inside a page"
+					Tapped="OnEmbeddedNavigationPage" />
+
+			</TableSection>
+
+			<TableSection
+				Title="Fast ListView Cells">
+
+				<TextCell
+					Text="Default Simple cell"
+					Detail="Using a standard ViewCell with simple xaml"
+					Tapped="OnDefaultSimpleCell" />
+
+				<TextCell
+					Text="Simple FastCell"
+					Detail="Using a FastCell with simple xaml"
+					Tapped="OnFastSimpleCell" />
+
+				<TextCell
+					Text="Verifying FastCell Uneven Heights"
+					Detail="Shows how fastcells work with different heights"
+					Tapped="OnFastCellUnevenHeights" />
+
+				<TextCell
+					Text="Verifying FastCell Order"
+					Detail="There was a bug with recylcing, this proves it's fixed"
+					Tapped="OnFastSimpleCellLots" />
+
+				<TextCell
+					Text="Default Complex cell"
+					Detail="Using standard ViewCell with complex xaml"
+					Tapped="OnDefaultComplexCell" />
+
+				<TextCell
+					Text="Complex FastCell"
+					Detail="Using a FastCell with complex xaml"
+					Tapped="OnFastComplexCell" />
+
+			</TableSection>
+
+			<TableSection
+				Title="XLabs GridView improvements">
+
+				<TextCell
+					Text="Performance 1"
+					Detail="Using better view recyling for native performance"
+					Tapped="OnGridViewPerformance" />
+
+				<TextCell
+					Text="Performance 2"
+					Detail="Showing grid view in gridview performance"
+					Tapped="OnGridViewPerformance2" />
+
+				<TextCell
+					Text="Performance 3"
+					Detail="Showing grid view's performance with xaml more complex cells"
+					Tapped="OnGridViewPerformance3" />
+
+				<TextCell
+					Text="Additional Properties"
+					Detail="Showing off some extra properties we added"
+					Tapped="OnGridViewProperties" />
+
+			</TableSection>
+
+			<TableSection
+				Title="Composition examples">
+
+				<TextCell
+					Height="60"
+					Text="CIRCLE VIEW"
+					Detail="Shows how to do circular masking, using composition"
+					Tapped="OnCircleView" />
+
+			</TableSection>
+
+			<TableSection
+				Title="Gestures">
+
+				<TextCell
+					Height="60"
+					Text="CROSS PLATFORM GESTURES"
+					Detail="All of these gestures work by composition, so they will work for any view. Subclassing is not required" />
+
+				<TextCell
+					Text="Tap"
+					Tapped="OnTapGesture" />
+
+				<TextCell
+					Text="LongPress"
+					Tapped="OnLongPressGesture" />
+
+				<TextCell
+					Text="Component Example"
+					Detail="Example of making a page scroller using gestures"
+					Tapped="OnPageScrollerExample" />
+
+				<TextCell
+					Text="Swipe"
+					Tapped="OnSwipeGesture" />
+
+				<TextCell
+					Text="Pan"
+					Tapped="OnPanGesture" />
+
+				<TextCell
+					Text="Pan - alternate (global) routing"
+					Tapped="OnPanGestureAlternate" />
+
+				<TextCell
+					Text="Pan - alternate (global) routing DELAYED TOUCHES and delegate"
+					Detail="Demontstrates support for delgate callback and delaying touche :D"
+					Tapped="OnPanGestureAlternateDelegate" />
+
+				<TextCell
+					Text="Pan2"
+					Detail="Example dragging a control around"
+					Tapped="OnPan2Gesture" />
+
+				<TextCell
+					Text="Pan3"
+					Detail="Example dragging a control around, with different parent"
+					Tapped="OnPan3Gesture" />
+
+				<TextCell
+					Text="Pinch"
+					Tapped="OnPanGesture" />
+
+				<TextCell
+					Text="Mixed"
+					Detail="Example showing how to mix gestures together"
+					Tapped="OnMixedGestures" />
+
+				<TextCell
+					Text="ListGestures"
+					Detail="Example showing gestures in listcells"
+					Tapped="OnCellGestures" />
+
+				<TextCell
+					Text="UX example"
+					Detail="Example showing gestures youtube styled UX"
+					Tapped="OnYoutubeStyleGestures" />
+
+				<TextCell
+					Text="drag list example"
+					Detail="Example showing gestures to do cool list stuff"
+					Tapped="OnDragListGestures" />
+
+				<TextCell
+					Text="Nested children"
+					Detail="Demonstrating gestures inside of other views"
+					Tapped="OnGesturesInChildViews" />
+
+			</TableSection>
+
+			<TableSection
+				Title="SvgImage examples">
+
+				<TextCell
+					Height="60"
+					Text="SvgImage"
+					Detail="Shows how to do 9-slice SVG images"
+					Tapped="OnSvgImage" />
+
+			</TableSection>
+
+		</TableView>
+
+	</ContentPage.Content>
+
+</ContentPage>

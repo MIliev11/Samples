@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:abstractions="clr-namespace:ExtendedCells.Forms.Plugin.Abstractions;assembly=ExtendedCells.Forms.Plugin.Abstractions"
+             xmlns:models="clr-namespace:SampleApp.Models;assembly=SampleApp"
+             x:Class="SampleApp.Pages.Styles">
+  <ScrollView Orientation="Vertical">
+    <StackLayout>
+      <StackLayout.HeightRequest>
+        <OnPlatform x:TypeArguments="x:Double" Android="900" WinPhone="1200" />
+      </StackLayout.HeightRequest>
+
+      <Label Text="Cell Properties" FontSize="26" TextColor="{x:Static models:Colors.DefaultColor}"
+             HorizontalOptions="Center" />
+      <TableView>
+
+        <TableSection Title="Background Color">
+          <abstractions:ExtendedTextCell Style="{StaticResource CellWithBackground}"
+                                         LeftText="Cell With Red Background" />
+          <abstractions:ExtendedTextCell Style="{StaticResource CellWithBackground}" BackgroundColor="Purple"
+                                         LeftText="Cell With Background Overwritten" RightText="Purple" />
+        </TableSection>
+
+        <TableSection Title="Thickness">
+          <abstractions:ExtendedTextCell Style="{StaticResource CellWithThickness}"
+                                         LeftText="Cell With Thickness Specified" />
+        </TableSection>
+        <TableSection Title="Column Width">
+          <abstractions:ExtendedTextCell Style="{StaticResource CellWithSmallLeft}"
+                                         LeftText="Left 0.3"
+                                         RightText="Right 0.7" />
+          <abstractions:ExtendedTextCell Style="{StaticResource CellWithSmallRight}"
+                                         LeftText="Left 0.7"
+                                         RightText="Right 0.3" />
+
+          <abstractions:ExtendedTextCell Style="{StaticResource DefaultStyle}" LeftText="Default 0.5"
+                                         RightText="Default 0.5" />
+        </TableSection>
+      </TableView>
+
+      <Label Text="Cell Label Properties" FontSize="26" TextColor="{x:Static models:Colors.DefaultColor}"
+             HorizontalOptions="Center" />
+      <TableView>
+        <TableView.Root>
+          <TableSection Title="Single Row">
+            <abstractions:ExtendedTextCell Style="{StaticResource SingleRow}" LeftText="Left Text"
+                                           RightText="Right Text"/>
+          </TableSection>
+
+          <TableSection Title="Two Row">
+            <abstractions:ExtendedTextCell Style="{StaticResource DefaultStyle}" LeftText="Left Text"
+                                           LeftDetail="Left Detail"
+                                           RightText="Right Text"
+                                           RightDetail="Right Detail" />
+          </TableSection>
+
+          <TableSection Title="Text Alignment">
+            <abstractions:ExtendedTextCell Style="{StaticResource WithTextAlignment}"
+                                           LeftText="Left Text Start"
+                                           LeftDetail="Left Detail Center"
+                                           RightText="Right Text End"
+                                           RightDetail="Right Detail Center" />
+          </TableSection>
+
+          <TableSection Title="Font">
+            <abstractions:ExtendedTextCell Style="{StaticResource WithFonts}"
+                                           LeftText="Left Text Large"
+                                           LeftDetail="Left Detail Italic"
+                                           RightText="Right Text Micro"
+                                           RightDetail="Right Detail Bold"/>
+          </TableSection>
+
+          <TableSection Title="Text Color">
+            <abstractions:ExtendedTextCell Style="{StaticResource WithColors}"
+                                           LeftText="Left Text Red"
+                                           LeftDetail="Left Detail Blue"
+                                           RightText="Right Text Aqua" 
+                                           RightDetail="Right Detail Lime" />
+          </TableSection>
+
+
+        </TableView.Root>
+      </TableView>
+    </StackLayout>
+
+  </ScrollView>
+</ContentPage>

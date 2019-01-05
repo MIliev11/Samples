@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{7D9AE32B-694F-4FEC-BC92-7AD0126C5856}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DismissKeyboard/DismissKeyboardViewController.cs">
+    <Files>
+      <File FileName="DismissKeyboard/DismissKeyboardViewController.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="DismissKeyboard" expanded="True">
+            <Node name="DismissKeyboard" expanded="True" selected="True">
+              <Node name="Resources" expanded="True" />
+              <Node name="DismissKeyboardViewController.cs" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.DismissKeyboard PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.acff23a0940b0bc61baa41a57d614f1b0e65031c" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
